@@ -37,6 +37,9 @@ new Vue({
             this.state = true,
             this.names = [],
             this.result = ''
+        },
+        removeNameFromList(index){
+           this.names.splice(index,1);
         }
     }
 })

@@ -21,7 +21,7 @@
             {{ errorMessage }}
          </div>
          <div class="list_of_names">
-            <div v-for="(name,index) in names" :key="index">
+            <div v-for="(name,index) in names" :key="index" @click="removeNameFromList(index)">
                {{ name }}
             </div>
          </div>
